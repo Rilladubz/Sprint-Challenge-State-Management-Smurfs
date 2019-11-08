@@ -23,24 +23,33 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+      Context helps solve issues that can arise with prop drilling by providing state to components with out needing to drill levels deep utilizing what is called a Context Provider.
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+      Action give context to the reducer which runs logic and store does as it sounds stores the state values with in it. Store is known as a single source of truth because it houses your state values.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+      Application state is global state which can be utilized in multiple places accross an application while component state is the state which is needed and likely to only be used at the local component level.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+      Redux Thunk is a form of middleware which allows us to do async operation in the same file as the action creator.
+
 - [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+      I didn't like Redux initially I thought it was tedious in nature but after learning how to utilize it, it's become one of my favorite. Writing logic in it can be a bit daunting but having access to things like middleware & logger are pretty amazing tools to utilize in your work flow.
 
 ## Project Set Up
 
 Follow these steps to set up your project:
 
-- [ ] `fork & clone` this repository.
-- [ ] `cd` into the forked copy of this repository.
-- [ ] **RUN** `yarn` to retrieve all `server-side` the dependencies.
-- [ ] **RUN** `yarn start` or `npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
-- [ ] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an array with one smurf in it returned to you. This is an array that your **API** will be using to store our Smurf Data.
-- [ ] **LOOK** at your `smurfs` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ] **Open** `src/index.js` to make sure that your app is ready to roll with the proper middleware.
-- [ ] **cd** into `smurfs` and run `yarn` to retrieve the client side dependencies.
-- [ ] **RUN** `yarn start` to fire up your React application. There ought to be a pretty little message awaiting you welcoming you to the app. `Follow` the prompting.
+- [-] `fork & clone` this repository.
+- [-] `cd` into the forked copy of this repository.
+- [-] **RUN** `yarn` to retrieve all `server-side` the dependencies.
+- [-] **RUN** `yarn start` or `npm start` to get your API up and running on `http://localhost:3333`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
+- [-] After your API is up and running, you can open chrome and type in `http://localhost:3333/smurfs`. You should see an array with one smurf in it returned to you. This is an array that your **API** will be using to store our Smurf Data.
+- [-] **LOOK** at your `smurfs` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [-] **Open** `src/index.js` to make sure that your app is ready to roll with the proper middleware.
+- [-] **cd** into `smurfs` and run `yarn` to retrieve the client side dependencies.
+- [-] **RUN** `yarn start` to fire up your React application. There ought to be a pretty little message awaiting you welcoming you to the app. `Follow` the prompting.
 
 **LOOK** at all the files you've been given for this project. One important file to note is `server.js`. This file contains an **API** that you are going to be interfacing with. Below is documentation on how to interact with the **API**.
 
